@@ -1,0 +1,40 @@
+/* Base */
+@import 'libs/normalize';
+@import 'fonts/fonts';
+@import 'fonts/icons';
+
+/* Variables */
+$main-color: #5da8ef;
+
+/* Main styles */
+body {
+  background: url('../img/bg/bg-lines.png') top center;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+/* Blocks */
+@import 'blocks/nav';
+@import 'blocks/header';
+@import 'blocks/quote';
+@import 'blocks/media';
+@import 'blocks/shop';
+@import 'blocks/articles';
+@import 'blocks/subscribe';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+
+@import 'blocks/extra-blocks';

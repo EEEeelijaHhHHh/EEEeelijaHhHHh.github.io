@@ -1,0 +1,61 @@
+.more-link {
+  position: relative;
+  display: inline-block;
+  color: #333333;
+  font-family: "League Spartan";
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5.4px;
+  transition: all .2s ease-in-out;
+  padding-bottom: 10px;
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    height: 2px;
+    width: 96%;
+    background-color: rgba($main-color, .7);
+  }
+}
+
+.section {
+  &-title {
+    color: #333333;
+    font-family: "Playfair Display";
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: .42px;
+
+    &_center {
+      text-align: center;
+    }
+  }
+}
+
+.side-desc {
+  position: absolute;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+
+  &__text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(#0b0c11, .2);
+    font-family: "League Spartan";
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    transform: translateY(100%);
+  }
+}
