@@ -15,12 +15,14 @@
   });
 
   function toggleMenu() {
-    list.classList.toggle('nav__list_active');
-    button.classList.toggle('nav-hamburger_active');
-    if (list.classList.contains('nav__list_active')) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "scroll";
+    if (window.innerWidth <= 768) {
+      list.classList.toggle('nav__list_active');
+      button.classList.toggle('nav-hamburger_active');
+      if (list.classList.contains('nav__list_active')) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "scroll";
+      }
     }
   }
 }());
@@ -87,4 +89,9 @@
   }
 
   form.addEventListener('submit', validate);
+}());
+
+/* WOW JS Init */
+(function () {
+  new WOW().init();
 }());
