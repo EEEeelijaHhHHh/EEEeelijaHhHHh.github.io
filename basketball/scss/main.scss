@@ -1,0 +1,65 @@
+/* Imports */
+@import 'normalize';
+@import 'fonts';
+
+/* Variables */
+$active-color: #db3259;
+$sub-active-color: #1a506c;
+$white: #fff;
+
+$main-font: 'Roboto',
+sans-serif;
+
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+/* Common */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  @media (max-width: $lg) {
+    font-size: 8px;
+  }
+  @media (max-width: $md) {
+    font-size: 10px;
+  }
+}
+
+body {
+  font-family: $main-font;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Blocks */
+@import 'blocks/nav';
+@import 'blocks/main';
+@import 'blocks/header';
+@import 'blocks/btn';
+@import 'blocks/teams';
+@import 'blocks/bets';
+@import 'blocks/sidebar';
+@import 'blocks/main-section';
+@import 'blocks/footer';

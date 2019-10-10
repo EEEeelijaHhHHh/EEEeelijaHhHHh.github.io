@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  color: $white;
+  font-family: $main-font;
+  font-size: 1.4rem;
+  font-weight: 400;
+  min-width: 120px;
+  padding: 1rem 2.3rem;
+  line-height: 1;
+
+  text-decoration: none;
+  background-color: $active-color;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: .2s;
+  &:hover, &:focus {
+    background-color: darken($active-color, 10%);
+  }
+
+  &_sm {
+    min-width: 45px;
+    padding: 1rem;
+    border-radius: 0 5px 5px 0;
+  }
+
+  &_lg {
+    min-width: 140px;
+  }
+
+  &_full {
+    width: 100%;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+}

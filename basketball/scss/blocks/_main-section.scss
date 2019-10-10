@@ -1,0 +1,19 @@
+.main-section {
+  padding: 5rem 0;
+  &__title {
+    color: $white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: (26/18);
+    margin: 0 0 2rem 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

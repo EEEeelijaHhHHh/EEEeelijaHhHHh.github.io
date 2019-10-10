@@ -1,0 +1,71 @@
+[33mcommit 3067fca6a6e6a3331038e7fcfcf07f2d7500d5d2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Wed Oct 9 12:42:39 2019 +0300
+
+    Sidebar Articles Buttons Hover Effect
+
+[33mcommit 8098cf0c96a58fc4db4d47254a6f26ea603555bf[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Wed Oct 9 12:15:26 2019 +0300
+
+    Fixed validator's errors
+
+[33mcommit 50c934f20614a1121f07a4f92fd28903cc62ea41[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Wed Oct 9 12:11:12 2019 +0300
+
+    Adaptive Main Content && Sidebar && Bets Box
+
+[33mcommit d53aa57380121aa4198df5f54de0389b83a6c489[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Tue Oct 8 19:19:36 2019 +0300
+
+    Adaptive Navigation
+
+[33mcommit a11be475faef86d040831ae4c25f767b38c8e156[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Tue Oct 8 16:02:08 2019 +0300
+
+    Nav Menu Hamburger Script
+
+[33mcommit 2540b01089690923662edf854d117b2882fc919c[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Tue Oct 8 14:16:30 2019 +0300
+
+    Main Section && Footer
+
+[33mcommit 9af1355f55935f1af09d27162cf850bfc13093e8[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Tue Oct 8 11:33:19 2019 +0300
+
+    Sidebar Articles
+
+[33mcommit 003ae599be06fc1af667c354514ea57a464e7abb[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Tue Oct 8 10:28:29 2019 +0300
+
+    Sidebar Subscribe Item
+
+[33mcommit 4577c08ed9ca00f9985e9ef726df32c614c6221f[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Tue Oct 8 01:54:10 2019 +0300
+
+    Starting Main > Added bets items && Starting Sidebar
+
+[33mcommit 9286ccbf7a65cad300502bf8f3b63ca1e7920a48[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Mon Oct 7 23:15:50 2019 +0300
+
+    Header
+
+[33mcommit 92a8b7639bfbc2d1c6a36dc13ba42293c854b108[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Mon Oct 7 21:20:24 2019 +0300
+
+    Navigation
+
+[33mcommit 591baefa32cf77d03dd45792b8c3aca24b5fee52[m
+Author: EEEeelijaHhHHh <elijahs.adjutovs@gmail.com>
+Date:   Mon Oct 7 19:39:43 2019 +0300
+
+    Init a new project with standart template
