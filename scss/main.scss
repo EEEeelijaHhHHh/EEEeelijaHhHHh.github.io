@@ -1,0 +1,36 @@
+/* Imports */
+@import 'normalize';
+@import 'fonts';
+
+/* Variables */
+$active-color: #db3259;
+$sub-active-color: #1a506c;
+$white: #fff;
+
+$main-font: 'Roboto', sans-serif;
+
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+/* Common */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Blocks */
