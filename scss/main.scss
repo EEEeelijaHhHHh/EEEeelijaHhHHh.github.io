@@ -31,7 +31,6 @@ body {
   font-family: $main-font;
   font-size: 1.2rem;
   font-weight: 300;
-  line-height: 2;
 }
 
 .container {
@@ -45,3 +44,5 @@ body {
 @import 'blocks/nav';
 @import 'blocks/logo';
 @import 'blocks/btn';
+
+@import 'media';
