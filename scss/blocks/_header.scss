@@ -1,5 +1,9 @@
 .header {
-  padding-bottom: 5rem;
+  &-inner {
+    border-bottom: solid 1px rgba($sub-main-color, 0.3);
+    padding-bottom: 5rem;
+  }
+  
   &-content {
     padding: 7rem 0;
     &__description {
