@@ -47,13 +47,4 @@
       color: $white;
     }
   }
-
-  &-btns {
-    display: flex;
-
-    &__item {
-      margin-right: 1.5rem;
-      :last-child { margin-right: 0; }
-    }
-  }
 }

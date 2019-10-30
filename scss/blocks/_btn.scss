@@ -73,4 +73,13 @@
   &_sm {
     padding: 1rem 2.5rem;
   }
+
+  &-block {
+    display: flex;
+
+    &__item {
+      margin-right: 1.5rem;
+      :last-child { margin-right: 0; }
+    }
+  }
 }

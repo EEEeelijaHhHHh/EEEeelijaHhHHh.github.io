@@ -1,0 +1,28 @@
+.about {
+  padding-bottom: 4rem;
+  &-content {
+    max-width: 500px;
+    margin-left: auto;
+    &__title {
+      color: $main-color;
+      font-size: 4.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    &__subtitle {
+      color: rgba($main-color, .15);
+      font-size: 9.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    &__text {
+      color: $sub-main-color;
+      line-height: (24 / 12);
+      margin: 2rem 0 4rem 0
+    }
+  }
+}
