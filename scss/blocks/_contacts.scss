@@ -56,6 +56,11 @@
       color: $main-color;
       outline: none;
       margin-bottom: 2.5rem;
+      transition: all .3s;
+
+      &:focus {
+        border-color: $main-color;
+      }
     }
 
     &__input {
