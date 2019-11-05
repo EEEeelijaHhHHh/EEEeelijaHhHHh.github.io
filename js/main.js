@@ -1,4 +1,4 @@
-// navigation hamburger
+/* Navigation Hamburger Menu */
 (function () {
   const headerContent = document.querySelector('.header-content')
   const nav = document.querySelector('.nav');
@@ -21,4 +21,20 @@
     menu.classList.toggle('nav-menu_active');
     hamburger.classList.toggle('nav-hamburger_active');
   }
+}());
+
+
+/* Anchor Smooth Scroll's Animation */
+(function () {
+  document.querySelectorAll('[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const link = document.querySelector(this.getAttribute('href'));
+      console.log(link);
+      link.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 }());

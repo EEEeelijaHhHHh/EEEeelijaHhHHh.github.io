@@ -4,8 +4,9 @@
     border-bottom: solid 1px rgba($sub-main-color, 0.3);
     padding-bottom: 5rem;
   }
-  
+
   &-content {
+    position: relative;
     padding: 7rem 0;
 
     &_active {
@@ -55,7 +56,7 @@
       height: 40px;
       font-size: 2rem;
       color: $white;
-      transition: all .3s;
+      transition: all 0.3s;
       &:hover {
         background-color: $white;
         box-shadow: 0 0 0 4px #24292e;
