@@ -31,7 +31,6 @@
       e.preventDefault();
 
       const link = document.querySelector(this.getAttribute('href'));
-      console.log(link);
       link.scrollIntoView({
         behavior: 'smooth'
       });
