@@ -3,6 +3,14 @@
   &-content {
     max-width: 500px;
     margin-left: auto;
+    @media (max-width: $md) {
+      width: 100%;
+    }
+
+    @media (max-width: $sm) {
+      margin: 0 auto;
+    }
+
     &__title {
       color: $main-color;
       font-size: 4.5rem;

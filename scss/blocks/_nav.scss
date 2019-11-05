@@ -1,8 +1,21 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 2rem 0;
+  background-color: $white;
+  z-index: 3;
+
+  &_active {
+    position: fixed;
+    right: 0;
+    left: 0;
+  }
+
+  &-inner {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: $white;
+    align-items: center;
+  }
 
   &-menu {
     display: flex;
@@ -10,10 +23,35 @@
     padding: 0;
     margin: 0;
 
+    @media (max-width: $sm) {
+      position: fixed;
+      flex-direction: column;
+      top: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $white;
+      z-index: -1;
+      line-height: 8;
+      transform: translate(0, -130%);
+      transition: transform 0.5s ease-in-out;
+
+      &_active {
+        transform: translate(0, 0);
+        overflow: auto;
+      }
+    }
+
     &__item {
       list-style: none;
       margin-right: 4rem;
-      &:last-child { margin-right: 0; }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media (max-width: $sm) {
+        margin-right: 0;
+      }
     }
 
     &__link {
@@ -23,7 +61,7 @@
       font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
       &:hover {
         &::after {
           width: 100%;
@@ -32,14 +70,67 @@
 
       &::after {
         display: block;
-        content: '';
+        content: "";
         position: absolute;
         top: 100%;
         left: 0;
         width: 0;
         height: 3px;
         background-color: $main-color;
-        transition: .3s;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &-hamburger {
+    position: relative;
+    display: none;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+
+    @media (max-width: $sm) {
+      display: block;
+      z-index: 4;
+    }
+
+    &__line,
+    &__line::after,
+    &__line::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: $main-color;
+      border-radius: 10px;
+      transition: all 0.4s ease-in;
+    }
+
+    &__line {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+
+      &::after {
+        transform: translate(0, 8px);
+      }
+
+      &::before {
+        transform: translate(0, -8px);
+      }
+    }
+
+    &_active .nav-hamburger__line {
+      background-color: transparent;
+      &::after {
+        transform: rotate(45deg);
+      }
+      &::before {
+        transform: rotate(-45deg);
       }
     }
   }
