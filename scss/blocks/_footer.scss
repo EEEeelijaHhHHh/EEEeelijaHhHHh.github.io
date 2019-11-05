@@ -9,6 +9,11 @@
     font-size: 1.4rem;
     font-weight: 400;
 
+    @media (max-width: $sm) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
     &__copyright {
       display: block;
       position: relative;
@@ -22,6 +27,15 @@
         width: 1px;
         height: 20px;
         background-color: $light-gray;
+
+        @media (max-width: $sm) {
+          display: none;
+        }
+      }
+
+      @media (max-width: $sm) {
+        padding-right: 0;
+        order: 3;
       }
     }
   }
@@ -30,6 +44,11 @@
     display: flex;
     padding: 0 0 0 1.5rem;
     margin: 0;
+
+    @media (max-width: $sm) {
+      order: 1;
+      margin-bottom: 1rem;
+    }
 
     &__item {
       list-style: none;
@@ -52,6 +71,10 @@
     align-items: center;
     padding: 0;
     margin: 0 0 0 auto;
+
+    @media (max-width: $sm) {
+      margin: 0 auto 1rem auto;
+    }
 
     &__item {
       list-style: none;
