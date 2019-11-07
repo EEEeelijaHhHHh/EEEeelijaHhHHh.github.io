@@ -5,6 +5,27 @@
     padding-bottom: 5rem;
   }
 
+  &-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+
+    &::after {
+      display: block;
+      background-color: rgba($main-color, 0.5);
+      box-shadow: 0 0 1rem 0.1rem rgba($main-color, 0.75);
+      content: "";
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   &-content {
     position: relative;
     padding: 7rem 0;
@@ -70,6 +91,38 @@
         &:hover {
           box-shadow: 0 0 0 4px #007bb6;
           color: #007bb6;
+        }
+      }
+
+      &_email {
+        background-color: #c23a2b;
+        &:hover {
+          box-shadow: 0 0 0 4px #c23a2b;
+          color: #c23a2b;
+        }
+      }
+
+      &_phone {
+        background-color: #4cda64;
+        &:hover {
+          box-shadow: 0 0 0 4px #4cda64;
+          color: #4cda64;
+        }
+      }
+
+      &_telegram {
+        background-color: #31a5d8;
+        &:hover {
+          box-shadow: 0 0 0 4px #31a5d8;
+          color: #31a5d8;
+        }
+      }
+
+      &_whatsapp {
+        background-color: #22c842;
+        &:hover {
+          box-shadow: 0 0 0 4px #22c842;
+          color: #22c842;
         }
       }
     }

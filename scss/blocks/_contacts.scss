@@ -1,22 +1,38 @@
 .contacts {
-  padding: 2rem 0 8rem 0;
+  position: relative;
+  margin: 2rem 0 8rem 0;
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 48%;
+    background: url("../img/contacts-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      display: block;
+      background-color: rgba($main-color, .5);
+      box-shadow: 0 0 1rem 0.1rem rgba($main-color, .75);
+      content: "";
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   &-inner {
     width: 50%;
     margin-left: auto;
-    @media (max-width: $md) {
-      width: 70%;
-    }
-    @media (max-width: $sm) {
-      width: 100%;
-    }
   }
 
   &__title {
     color: $main-color;
     font-size: 4.5rem;
     font-weight: 700;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     margin: 0;
   }
 
@@ -35,7 +51,9 @@
     &__item {
       list-style: none;
       margin-bottom: 1rem;
-      :last-child { margin-bottom: 0; }
+      :last-child {
+        margin-bottom: 0;
+      }
     }
 
     &__link {
@@ -49,7 +67,6 @@
   }
 
   &-form {
-
     &__label {
       display: block;
       color: $main-color;
@@ -57,15 +74,16 @@
       margin-bottom: 1rem;
     }
 
-    &__input, &__textarea {
+    &__input,
+    &__textarea {
       display: block;
       width: 100%;
       border-radius: 2.5rem;
-      border: solid 1px rgba($light-gray, .3);
+      border: solid 1px rgba($light-gray, 0.3);
       color: $main-color;
       outline: none;
       margin-bottom: 2.5rem;
-      transition: all .3s;
+      transition: all 0.3s;
 
       &:focus {
         border-color: $main-color;
