@@ -83,8 +83,13 @@
   &-block {
     display: flex;
 
-    @media (max-width: $xs) {
-      flex-direction: column;
+    
+    @media (min-width: $sm + 1) and (max-width: $md), (max-width: $xs) {
+      flex-direction: column !important;
+    }
+    
+    @media (max-width: $sm) {
+      flex-direction: row;
     }
 
     &__item {
@@ -94,12 +99,20 @@
         margin-right: 0;
       }
 
-      @media (max-width: $xs) {
+      @media (max-width: $md) {
         margin-right: 0;
         margin-bottom: 1rem;
-        
+
         :last-child {
           margin-bottom: 0;
+        }
+      }
+
+      @media (max-width: $sm) {
+        margin-right: 1.5rem;
+
+        :last-child {
+          margin-right: 0;
         }
       }
     }

@@ -22,10 +22,6 @@
       height: 100%;
     }
 
-    @media (max-width: $md) {
-      width: 35%;
-    }
-
     @media (max-width: $sm) {
       display: none;
     }
@@ -35,10 +31,6 @@
     width: 50%;
     padding-left: 3rem;
     margin-left: auto;
-
-    @media (max-width: $md) {
-      width: 70%;
-    }
 
     @media (max-width: $sm) {
       width: 100%;
@@ -70,6 +62,10 @@
 
       @media (max-width: $lg) {
         font-size: 7.2rem;
+      }
+
+      @media (max-width: $md) {
+        font-size: 5.8rem;
       }
 
       @media (max-width: $xs) {
