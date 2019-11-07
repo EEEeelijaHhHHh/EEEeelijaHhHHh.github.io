@@ -33,7 +33,7 @@
 
   &-content {
     width: 50%;
-    padding-left: 5rem;
+    padding-left: 3rem;
     margin-left: auto;
 
     @media (max-width: $md) {
@@ -55,6 +55,10 @@
       @media (max-width: $lg) {
         font-size: 2.5rem;
       }
+
+      @media (max-width: $xs) {
+        font-size: 2rem;
+      }
     }
 
     &__subtitle {
@@ -66,6 +70,10 @@
 
       @media (max-width: $lg) {
         font-size: 7.2rem;
+      }
+
+      @media (max-width: $xs) {
+        font-size: 5rem;
       }
     }
 

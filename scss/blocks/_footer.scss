@@ -17,10 +17,10 @@
     &__copyright {
       display: block;
       position: relative;
-      padding-right: 1.5rem;     
+      padding-right: 1.5rem;
       &::after {
         display: block;
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 100%;
@@ -53,13 +53,19 @@
     &__item {
       list-style: none;
       margin-right: 2.5rem;
-      &:last-child { margin-right: 0; }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media (max-width: $md) {
+        margin-right: 2rem;
+      }
     }
 
     &__link {
       color: $light-gray;
       font-size: 1.6rem;
-      transition: color .3s;
+      transition: color 0.3s;
       &:hover {
         color: $white;
       }
@@ -79,7 +85,13 @@
     &__item {
       list-style: none;
       margin-right: 1.5rem;
-      &:last-child { margin-right: 0; }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media (max-width: $xs) {
+        margin-right: 1.2rem;
+      }
     }
 
     &__link {
@@ -87,7 +99,7 @@
       font-size: 1.4rem;
       font-weight: 400;
       text-decoration: none;
-      transition: all .3s;
+      transition: all 0.3s;
       &:hover {
         color: $white;
       }

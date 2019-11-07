@@ -74,24 +74,6 @@
     padding: 1rem 2.5rem;
   }
 
-  &_footer {
-    background-color: $main-color;
-    color: $light-gray;
-    font-size: 1.4rem;
-    font-weight: 400;
-    border: 1px solid $light-gray;
-    padding: .7rem 1.5rem;
-
-    &:hover {
-      background-color: $main-color;
-      color: $white;
-    }
-
-    &::after {
-      background-color: $main-color;
-    }
-  }
-
   &_submit {
     font-size: 1.6rem;
     font-weight: 400;
@@ -101,10 +83,24 @@
   &-block {
     display: flex;
 
+    @media (max-width: $xs) {
+      flex-direction: column;
+    }
+
     &__item {
       margin-right: 1.5rem;
+
       :last-child {
         margin-right: 0;
+      }
+
+      @media (max-width: $xs) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        
+        :last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }

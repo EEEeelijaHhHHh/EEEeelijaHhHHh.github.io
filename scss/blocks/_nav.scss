@@ -33,8 +33,8 @@
       background-color: $white;
       z-index: 1;
       line-height: 8;
-      transform: translate(0, -130%);
-      transition: transform 0.5s ease-in-out;
+      transform: translate(0, -999px);
+      transition: all 0.5s;
 
       &_active {
         transform: translate(0, 0);

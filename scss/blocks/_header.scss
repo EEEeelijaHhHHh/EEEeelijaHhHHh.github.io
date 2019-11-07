@@ -3,6 +3,10 @@
     position: relative;
     border-bottom: solid 1px rgba($sub-main-color, 0.3);
     padding-bottom: 5rem;
+
+    @media (max-width: $xs) {
+      padding-bottom: 3rem;
+    }
   }
 
   &-bg {
@@ -26,7 +30,7 @@
     }
 
     @media (max-width: $md) {
-      width: 40%;
+      width: 39%;
     }
 
     @media (max-width: $sm) {
@@ -37,6 +41,10 @@
   &-content {
     position: relative;
     padding: 7rem 0;
+
+    @media (max-width: $xs) {
+      padding: 5rem 0;
+    }
 
     &_active {
       padding: 17.2rem 0 7rem 0;
