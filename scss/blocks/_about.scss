@@ -1,14 +1,48 @@
 .about {
-  padding: 4rem 0;
-  &-content {
-    max-width: 500px;
-    margin-left: auto;
-    @media (max-width: $md) {
+  position: relative;
+  margin: 4rem 0;
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+
+    &::after {
+      display: block;
+      background-color: rgba($main-color, 0.5);
+      box-shadow: 0 0 1rem 0.1rem rgba($main-color, 0.75);
+      content: "";
       width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: $md) {
+      width: 35%;
     }
 
     @media (max-width: $sm) {
-      margin: 0 auto;
+      display: none;
+    }
+  }
+
+  &-content {
+    width: 50%;
+    padding-left: 5rem;
+    margin-left: auto;
+
+    @media (max-width: $md) {
+      width: 70%;
+    }
+
+    @media (max-width: $sm) {
+      width: 100%;
+      padding-left: 0;
     }
 
     &__title {
@@ -17,20 +51,28 @@
       font-weight: 700;
       text-transform: uppercase;
       margin: 0;
+
+      @media (max-width: $lg) {
+        font-size: 2.5rem;
+      }
     }
 
     &__subtitle {
-      color: rgba($main-color, .15);
+      color: rgba($main-color, 0.15);
       font-size: 9.2rem;
       font-weight: 700;
       text-transform: uppercase;
       margin: 0;
+
+      @media (max-width: $lg) {
+        font-size: 7.2rem;
+      }
     }
 
     &__text {
       color: $sub-main-color;
       line-height: (24 / 12);
-      margin: 2rem 0 4rem 0
+      margin: 2rem 0 4rem 0;
     }
   }
 }

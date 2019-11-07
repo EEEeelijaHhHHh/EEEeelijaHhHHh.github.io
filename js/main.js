@@ -12,7 +12,9 @@
   });
 
   links.forEach(link => link.addEventListener('click', () => {
-    toggleMenu();
+    if (window.innerWidth <= 768) {
+      toggleMenu();
+    }
   }));
 
   function toggleMenu() {

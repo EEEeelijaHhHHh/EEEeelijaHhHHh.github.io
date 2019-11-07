@@ -60,7 +60,7 @@
       margin: 0;
 
       &:hover, &:focus {
-        .works-block__img {
+        .works-block__img-wrapper {
           opacity: 0;
         }
         .works-block-content {
@@ -73,11 +73,15 @@
         }
       }
     }
-    &__img {
+    &__img-wrapper {
       display: block;
       width: 100%;
       height: 80%;
       transition: all .3s;
+    }
+    &__img {
+      display: block;
+      width: 100%;
     }
     &-content {
       position: absolute;
