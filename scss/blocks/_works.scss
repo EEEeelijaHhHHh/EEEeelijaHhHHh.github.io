@@ -9,7 +9,7 @@
 
     &__item {
       list-style: none;
-      margin-right: 3rem;
+      margin-right: 1rem;
 
       &:last-child {
         margin-right: 0;
@@ -17,17 +17,15 @@
     }
 
     &__btn {
+      position: relative;
       border: none;
       background-color: inherit;
       cursor: pointer;
       color: $main-color;
       font-weight: 400;
-      padding: 0;
+      padding: 1rem 2rem;
+      outline: none;
       transition: all 0.3s;
-
-      &:hover {
-        transform: scale(1.5);
-      }
     }
   }
 
@@ -47,6 +45,10 @@
 
       @media (max-width: $sm) {
         flex-basis: 100%;
+      }
+
+      &_hidden {
+        display: none;
       }
     }
 

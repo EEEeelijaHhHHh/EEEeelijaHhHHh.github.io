@@ -39,3 +39,22 @@
     });
   });
 }());
+
+
+/* Works Filtering */
+(function () {
+  const buttons = document.querySelectorAll('.works-control__btn');
+  const items = document.querySelectorAll('.works-block__col');
+
+  buttons.forEach(button => button.addEventListener('click', function() {
+    const filter = button.dataset.filter;
+    const filteredItems = [...items].filter(item => !item.classList.contains(filter));
+
+    buttons.forEach(button => button.classList.remove('works-control__btn_active'));
+    this.classList.add('works-control__btn_active');
+
+    items.forEach(item => item.classList.remove('works-block__col_hidden'));
+    if (filter === '*') return;
+    filteredItems.forEach(item => item.classList.add('works-block__col_hidden'));
+  }))
+}());
