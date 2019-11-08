@@ -54,6 +54,7 @@
     this.classList.add('works-control__btn_active');
 
     items.forEach(item => item.classList.remove('works-block__col_hidden'));
+    // if choose all - show all
     if (filter === '*') return;
     filteredItems.forEach(item => item.classList.add('works-block__col_hidden'));
   }))
