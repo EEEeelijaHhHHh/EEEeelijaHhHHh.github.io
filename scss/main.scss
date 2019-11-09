@@ -39,6 +39,10 @@ body {
   padding: 0 1.5rem;
 }
 
+.disable-scrolling {
+  overflow: hidden;
+}
+
 /* Blocks */
 @import 'blocks/header';
 @import 'blocks/nav';

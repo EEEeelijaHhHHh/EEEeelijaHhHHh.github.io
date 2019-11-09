@@ -3,12 +3,6 @@
   background-color: $white;
   z-index: 3;
 
-  &_active {
-    position: fixed;
-    right: 0;
-    left: 0;
-  }
-
   &-inner {
     display: flex;
     position: relative;
@@ -31,7 +25,7 @@
       right: 0;
       bottom: 0;
       background-color: $white;
-      z-index: 1;
+      z-index: 2;
       line-height: 8;
       transform: translate(0, -999px);
       transition: all 0.5s;

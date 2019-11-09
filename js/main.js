@@ -1,9 +1,8 @@
 /* Navigation Hamburger Menu */
 (function () {
-  const headerContent = document.querySelector('.header-content')
-  const nav = document.querySelector('.nav');
   const menu = document.querySelector('.nav-menu');
   const hamburger = document.querySelector('.nav-hamburger');
+  const body = document.querySelector('body');
 
   const links = document.querySelectorAll('.nav-menu__link');
 
@@ -18,10 +17,9 @@
   }));
 
   function toggleMenu() {
-    headerContent.classList.toggle('header-content_active');
-    nav.classList.toggle('nav_active');
     menu.classList.toggle('nav-menu_active');
     hamburger.classList.toggle('nav-hamburger_active');
+    body.classList.toggle('disable-scrolling');
   }
 }());
 
