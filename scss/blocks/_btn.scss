@@ -88,6 +88,8 @@
     
     @media (min-width: $sm + 1) and (max-width: $md), (max-width: $xs) {
       flex-direction: column !important;
+      max-width: 260px;
+      margin: 0 auto;
     }
     
     @media (max-width: $sm) {
