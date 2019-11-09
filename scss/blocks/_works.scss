@@ -7,11 +7,20 @@
     margin: 0;
     padding: 0 0 3.5rem 0;
 
+    @media (max-width: $xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__item {
       list-style: none;
       margin-right: 1rem;
 
       &:last-child {
+        margin-right: 0;
+      }
+
+      @media (max-width: $xs) {
         margin-right: 0;
       }
     }
@@ -21,11 +30,16 @@
       border: none;
       background-color: inherit;
       cursor: pointer;
-      color: $main-color;
+      color: $light-gray;
+      font-size: 1.4rem;
       font-weight: 400;
       padding: 1rem 2rem;
       outline: none;
       transition: all 0.3s;
+
+      &:hover, &_active {
+        color: rgba($main-color, 1);
+      }
     }
   }
 
@@ -81,6 +95,7 @@
     &__img {
       display: block;
       width: 100%;
+      height: auto;
 
       &-wrapper {
         display: block;
